@@ -64,6 +64,7 @@ endgame.addEventListener('click', (ev) => {
 // eslint-disable-next-line no-unused-vars
 nextTry.forEach((item) => item.addEventListener('click', (ev) => {
   defeat.classList.add('hided');
+  congrat.classList.add('hided');
   clearCounter();
   startGame();
 }));
