@@ -1,0 +1,110 @@
+body {
+  background-color: rgba(255, 255, 153, 0.8);
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 510px 1fr ;
+  grid-template-areas:'header header header'
+                      'controls field stats'
+                      '. . .';
+  justify-items: center;
+}
+.field {
+  grid-area: field;
+  display: grid;
+  grid-template-columns: repeat(4,120px);
+  grid-template-rows: repeat(4,120px);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+
+.field-cell {
+  background-color: #1F0E11;
+  border: 1px dotted darkred;
+  border-radius: 50%;
+}
+
+h1 {
+  grid-area: header;
+}
+.devil {
+  background-image: url('../img/goblin.png');
+}
+
+.statictics {
+  grid-area: stats;
+  align-self: end;
+}
+.stats {
+  font-weight: bold;
+  font-size: 30px;
+}
+.stats:first-child {
+  margin-bottom: 20px;
+}
+
+.stats_dead,.dead {
+  color: #2920ff
+}
+
+.stats_miss, .miss {
+  color: #ff2d23;
+}
+
+button {
+  display: block;
+  background-color: #5e9539;
+  color: #FFF;
+  font-size: 15px;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  border-radius: 50%;
+
+}
+.clear-score-button {
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #4b4910;
+}
+.controls {
+  grid-area: controls;
+  align-self: end;
+}
+
+.hided {
+  display: none;
+}
+
+.congratulations, .defeat {
+  position: absolute;
+  top: 35vh;
+  left:35%;
+  border: 5px solid black;
+  padding: 50px 20px;
+  font-weight: bold;
+  color: white;
+}
+.defeat {
+  background-color: #df1e0a;
+}
+
+.congratulations {
+  background-color: #69df37;
+}
+
+.newgame {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff32c;
+  margin-top: 20px;
+}
+
+.newgame:hover {
+  background-color: blue;
+}
