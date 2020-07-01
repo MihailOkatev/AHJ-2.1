@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-unresolved
 import { cells, startGame, stop } from './gameLogic';
 
 const dead = document.querySelector('.dead');
@@ -50,14 +51,17 @@ cells.forEach((item) => {
   }));
 });
 
+// eslint-disable-next-line no-unused-vars
 clearCount.addEventListener('click', (ev) => {
   clearCounter();
 });
 
+// eslint-disable-next-line no-unused-vars
 endgame.addEventListener('click', (ev) => {
   endGameFunc();
 });
 
+// eslint-disable-next-line no-unused-vars
 nextTry.forEach((item) => item.addEventListener('click', (ev) => {
   defeat.classList.add('hided');
   clearCounter();
