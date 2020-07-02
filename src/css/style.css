@@ -3,7 +3,7 @@ body {
 }
 .content {
   display: grid;
-  grid-template-columns: 1fr 510px 1fr ;
+  grid-template-columns: 1fr 3fr 1fr ;
   grid-template-areas:'header header header'
                       'controls field stats'
                       '. . .';
