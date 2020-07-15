@@ -2,6 +2,5 @@
 export class GameField {
   constructor() {
     this.fielCells = Array.from(document.querySelectorAll('.field-cell'));
-    console.log(this.fielCells);
   }
 }
